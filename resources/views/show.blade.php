@@ -9,6 +9,7 @@
       @if(!empty($my_carts))
         @foreach($my_carts as $my_cart)
         <div>
+          <p>店舗番号: {{$my_cart->shop->store_id}}</p>
           {{$my_cart->shop->name}}
           <br>
           {{number_format($my_cart->shop->fee)}}
@@ -22,6 +23,7 @@
             <input type="submit" value="カートから削除する" class="btn btn-danger">
           </form>
         </div>
+        <br>
         @endforeach
         <div class="text-center p-2">
           個数: {{count($my_carts)}}個, <!--{{$my_carts->count()}}-->
