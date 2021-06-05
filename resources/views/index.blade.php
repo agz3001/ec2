@@ -4,6 +4,7 @@
 <div class="container">
   <div class="row">
     <h1>テスト</h1>
+    <p>testtest</p>
     <div class="d-flex flex-row flex-wrap">
     @foreach($shops as $shop)
     <div class="col-xs-6 col-sm-4 col-md-4">
